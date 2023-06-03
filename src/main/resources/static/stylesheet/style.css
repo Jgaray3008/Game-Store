@@ -15,15 +15,25 @@
 
 }
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-card-container{
+    margin-top: 3rem;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to right, blue, red);
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 0rem;
+    color: #fff;
 }
 
 .login-card{
@@ -48,15 +58,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+
 }
+
 
 .login-card-logo img { 
     width: 60px;
+}
+.login-card-logo:hover{
+    transform: scale(1.1);
 }
 
 .login-card a {
     text-decoration: none;
     color:blue;
+    
 }
 
 .login-card a:hover {
@@ -85,12 +102,18 @@ body{
 .login-card-header h1+div {
     font-size: calc(1rem * .8);
     opacity: .8;
+    color: black;
 }
+.login-card-header h1{
+    color: black;
+}
+
 
 .login-card-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    color: black;
 }
 .login-card-form .form-item {
     position: relative;
@@ -108,6 +131,7 @@ body{
     align-items: center;
     gap: 7px;
 }
+
 .login-card-form .form-item-other {
     display: flex;
     align-items: center;
@@ -118,6 +142,7 @@ body{
 .login-card-footer {
     margin-top: 1.5rem;
     font-size: calc(1rem * .8);
+    color: black;
 }
 .login-card input[type="text"],
 .login-card input[type="password"],
@@ -191,6 +216,7 @@ body{
     transition: all .5s;
 }
 
+
 .login-card-social-btns a:hover {
     background-color: white;
     transform: scale(1.1);
@@ -211,6 +237,7 @@ body{
 .footer {
     width: 100%;
     padding: 1rem;
+    margin-top: 10px;
 }
   
 .footer .footer-box {
@@ -234,6 +261,7 @@ body{
 }
 .social-box h2{
     margin-top: 0;
+    margin-bottom: 10px;
 }
 .footer-box-2{
     display: flex;
@@ -243,5 +271,130 @@ body{
 }
 .box a{
     text-decoration: none;
-    color:black;
+    color:white;
 }
+.box svg{
+    color: black;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/*NAV*/
+
+.header{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo-header img{
+    height: 70px;
+    width:auto;
+    transition: all 0.3s;
+}
+
+
+.header .logo-header img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 25px;
+    transition: all 0.3s;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+
+.header .nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.header .nav-links li a:hover{
+    color: white;
+    
+}
+
+.header .btn button{
+    font-weight: bold;
+    color: white;
+    padding: 9px 25px;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+    background: white;
+    color: black;
+}
+
+/*INDEX*/
+
+
+.grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.grid-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+  
+.card {
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: All 0.3s;
+}
+
+.card img:hover{
+    transform: scale(1.03)
+}
+.card p, h3{
+    color: black ;
+}
+  
+.card button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card button:hover{
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .6);
+    color: black;
+}
+  
+
